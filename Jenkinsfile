@@ -16,7 +16,7 @@ pipeline {
                     node --version
                     npm --version
                     npm ci
-                    npm install
+                    chmod +x node_modules/.bin/* || true
                     npm run build
                 '''
             }
